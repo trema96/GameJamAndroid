@@ -35,13 +35,9 @@ public class GraphView extends View {
         float yScale = canvas.getHeight() / 130.0f;
         int last = 0;
         double lastVal = vals[last];
-        Log.i("W/H",  canvas.getWidth() + "/" + canvas.getHeight());
         for (int i = 1; i < vals.length; i++) {
             canvas.drawLine(last * xScale, (float) -(lastVal * yScale),
                     i * xScale, (float) -(vals[i] * yScale), paint);
-            /*if (i<10) {
-                Log.i("VALS", "" + (last * xScale) + (lastVal * yScale) + (i * xScale) + (vals[i] * yScale));
-            }*/
             last = i;
             lastVal = vals[last];
         }
