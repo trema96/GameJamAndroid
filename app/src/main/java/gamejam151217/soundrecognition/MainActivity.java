@@ -1,16 +1,7 @@
 package gamejam151217.soundrecognition;
 
 import android.app.Activity;
-import android.app.Application;
-import android.content.pm.ActivityInfo;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.view.View;
-import android.widget.TextView;
-
-import java.util.Locale;
 
 import gamejam151217.soundrecognition.audio.GraphView;
 import gamejam151217.soundrecognition.audio.calculators.AudioCalculator;
